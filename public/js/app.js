@@ -1717,6 +1717,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+new Vue(App).mount('#app');
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['notifications'],
   methods: {
@@ -47291,7 +47292,7 @@ var render = function() {
       },
       [
         _c("span", { staticClass: "glyphicon glyphicon-globe" }),
-        _vm._v("\n         Notifications "),
+        _vm._v("\n        Notifications "),
         _c("span", { staticClass: "badge" }, [
           _vm._v(_vm._s(_vm.notifications.length))
         ]),
@@ -47317,7 +47318,7 @@ var render = function() {
                 }
               },
               [
-                _vm._v("\n                 SomeOne commented on your Post"),
+                _vm._v("\n                SomeOne commented on your Post"),
                 _c("br"),
                 _vm._v(" "),
                 _c("small", [_vm._v(_vm._s(notification.data.post.title))])
@@ -47328,7 +47329,7 @@ var render = function() {
         _vm._v(" "),
         _vm.notifications.length == 0
           ? _c("li", [
-              _vm._v("\n             There is no new notifications\n         ")
+              _vm._v("\n            There is no new notifications\n        ")
             ])
           : _vm._e()
       ],
@@ -59511,6 +59512,7 @@ Vue.component('notification', __webpack_require__(/*! ./components/Notification.
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+new Vue(App).mount('#app');
 var app = new Vue({
   el: '#app',
   data: {
@@ -59586,6 +59588,7 @@ if (token) {
 
 
 
+new Vue(App).mount('#app');
 window.Pusher = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',

@@ -24,6 +24,7 @@ class CommentController extends Controller
         ]);
       
         $post=Post::find($request->post_id);
+       
         $user=User::find($post->user_id)->notify(new NotifyPostOwner($post));
 
         Session::flash('status', 'Comment was successfully created');

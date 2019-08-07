@@ -44,6 +44,7 @@ if (token) {
  */
 
 import Echo from 'laravel-echo'
+new Vue(App).mount('#app');
 
 window.Pusher = require('pusher-js');
 
